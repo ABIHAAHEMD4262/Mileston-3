@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Resume Builder</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dynamic Resume Builder</h1>
+      <p>Create a professional resume with ease!</p>
+    </header>
+
+    <section class="form-section">
+      <h2>Resume Form</h2>
+      <form id="resume-form">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="phone" placeholder="Phone">
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+          <legend>Education</legend>
+          <input type="text" id="education" placeholder="Education Details" required>
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+          <legend>Work Experience</legend>
+          <textarea id="work" placeholder="Work Experience"></textarea>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+          <legend>Skills</legend>
+          <input type="text" id="skills" placeholder="Skills (comma-separated)">
+        </fieldset>
+
+        <button type="button" id="generate-resume">Generate Resume</button>
+      </form>
+    </section>
+
+    <section class="resume-display" id="resume-display">
+      <h2>Your Resume</h2>
+      <!-- Dynamic content will be displayed here -->
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Resume Builder. Created with ❤️ by Abiha Ahmed.</p>
+    </footer>
+  </div>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
